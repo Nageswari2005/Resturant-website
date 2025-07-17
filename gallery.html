@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amma’s Flame | Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fffdf9;
+      color: #4e342e;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f5e8d9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #6d4c41;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery-title {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .gallery-title h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .gallery-title p {
+      font-size: 1.1rem;
+      color: #6d4c41;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-item {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-item .info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .gallery-item .info h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #4e342e;
+    }
+
+    .gallery-item .info span {
+      display: block;
+      font-size: 0.9rem;
+      color: #8d6e63;
+      margin-top: 4px;
+    }
+
+    footer {
+      background-color: #f5e8d9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Amma’s Flame</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="ambience.html">Ambience</a>
+    </nav>
+  </header>
+
+  <section class="gallery-title">
+    <h2>Our Delicious Creations</h2>
+    <p>Feast your eyes on some of our signature South Indian delights.</p>
+  </section>
+
+  <section class="gallery-grid">
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/1200x/80/d6/d3/80d6d3a0d05c318a9a1c73b6a8868e1b.jpg" alt="Paneer Pepper Fry">
+      <div class="info">
+        <h3>Paneer Pepper Fry</h3>
+        <span>Starter</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/1200x/4c/6e/5a/4c6e5ac126f89c1337b58d9515c9dcf6.jpg" alt="Gobi 65">
+      <div class="info">
+        <h3>Gobi 65</h3>
+        <span>Starter</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/736x/70/5c/e5/705ce5dae03cf3ec99632412fc397a44.jpg" alt="Andhra Kodi Vepudu">
+      <div class="info">
+        <h3>Andhra Kodi Vepudu</h3>
+        <span>Main Course</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/736x/f7/93/12/f79312dc8d785010c287ff2cb911b953.jpg" alt="Bisi Bele Bath">
+      <div class="info">
+        <h3>Bisi Bele Bath</h3>
+        <span>Main Course</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/1200x/ea/ca/77/eaca7783069cbd17bdb02f8dc5e448ed.jpg" alt="Hyderabadi Mutton Biryani ">
+      <div class="info">
+        <h3>Hyderabadi Mutton Biryani </h3>
+        <span>Main Course</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://thumbs.dreamstime.com/z/kerala-fish-curry-appam-breakfast-food-south-india-karimeen-pollichathu-popular-hot-spicy-baked-banana-leaves-alleppey-189754966.jpg" alt="Kerala Fish Curry with Appam">
+      <div class="info">
+        <h3>Kerala Fish Curry with Appam</h3>
+        <span>Main Course</span>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://i.pinimg.com/736x/ff/a9/56/ffa956ef77b78f3f4831cf46af08498d.jpg" alt="Unniyappam">
+      <div class="info">
+        <h3>Unniyappam</h3>
+        <span>Desserts</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amma’s Flame. Every flavor has a story.</p>
+  </footer>
+
+</body>
+</html>

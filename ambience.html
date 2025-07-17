@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Amma’s Flame | Ambience</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fffdf9;
+      color: #4e342e;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f5e8d9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #6d4c41;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .ambience-title {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .ambience-title h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .ambience-title p {
+      font-size: 1.1rem;
+      color: #6d4c41;
+    }
+
+    .ambience-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .ambience-gallery figure {
+      margin: 0;
+      background-color: #fffaf3;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .ambience-gallery figure:hover {
+      transform: scale(1.03);
+    }
+
+    .ambience-gallery img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-bottom: 1px solid #e0cfc1;
+    }
+
+    .ambience-gallery figcaption {
+      padding: 12px;
+      font-size: 0.95rem;
+      text-align: center;
+      color: #5d4037;
+    }
+
+    footer {
+      background-color: #f5e8d9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Amma’s Flame</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="ambience.html">Ambience</a>
+    </nav>
+  </header>
+
+  <section class="ambience-title">
+    <h2>Experience the Ambience</h2>
+    <p>Warm lighting, rustic decor, and the aroma of tradition — discover the heart of Amma’s Flame.</p>
+  </section>
+
+  <section class="ambience-gallery">
+    <figure>
+      <img src="https://i.pinimg.com/736x/c3/52/ba/c352ba982dfe9f49414f6f3c83e4657a.jpg" alt="Dining Area">
+      <figcaption> dining area </figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.pinimg.com/736x/06/b6/10/06b610dede55fffcb87e652091afb0f2.jpg" alt="Interior Lighting">
+      <figcaption>Warm ambient lighting </figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.pinimg.com/736x/32/43/7f/32437fe294482ae2278c5b261a9f9b84.jpg" alt="Rustic Tables">
+      <figcaption>Rustic wooden tables </figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.pinimg.com/736x/17/0f/3f/170f3fc1478e51ef94f5f1671d9f5071.jpg" alt="Outdoor Seating">
+      <figcaption>Relaxing outdoor seating</figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amma’s Flame. Where tradition meets taste and comfort.</p>
+  </footer>
+
+</body>
+</html>

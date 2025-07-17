@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amma’s Flame | About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Amma’s Flame</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="ambience.html">Ambience</a>
+
+    </nav>
+  </header>
+
+  <main class="about">
+    <section>
+      <h2>About Us</h2>
+      <p>Founded in 2005, Amma’s Flame celebrates India's rich culinary traditions with refined, heartfelt recipes passed down through generations.</p>
+      <p>We combine warm hospitality, premium ingredients, and timeless ambiance to give our guests an unforgettable dining experience.</p>
+    </section>
+
+    <section>
+      <h3>Meet Our Chef</h3>
+      <p><strong>Chef Nivedita</strong> is the creative force behind Amma’s Flame. Born and raised in a traditional South Indian household, she learned the secrets of spices and slow cooking from her grandmother — the original "Amma" behind the name.</p>
+      <p>With over 20 years of culinary experience and a deep love for regional Indian cuisine, Chef Nivedita has crafted a menu that balances authenticity with a modern twist. Her dishes are a tribute to tradition, using family recipes, seasonal ingredients, and a passion that shines through in every bite.</p>
+      <p>Under her leadership, Amma’s Flame has grown from a humble eatery to a destination for food lovers seeking genuine South Indian flavors in a fine dining setting.</p>
+    </section>
+
+    <section class="carousel">
+      <h3>Inside Amma’s Kitchen</h3>
+      <div class="carousel-container">
+        <button class="carousel-btn prev">&#10094;</button>
+        <div class="carousel-slides">
+          <img src="https://i.pinimg.com/736x/e3/a8/4b/e3a84bd1758b7b96a322f3337df7fcf9.jpg" alt="Chef Nivedita cooking">
+          <img src="https://i.pinimg.com/1200x/56/4e/61/564e61d320a9d7667e5dd75a3b6736c4.jpg" alt="Traditional South Indian Kitchen">
+          <img src="https://i.pinimg.com/736x/06/ec/65/06ec655440ba6272f7de186bb991e89e.jpg" alt="Authentic South Indian dish">
+        </div>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Amma’s Flame. Proudly rooted in heritage.</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelector('.carousel-slides');
+    const images = document.querySelectorAll('.carousel-slides img');
+    const total = images.length;
+    let index = 0;
+
+    function showSlide(i) {
+      slides.style.transform = `translateX(-${i * 100}%)`;
+    }
+
+    document.querySelector('.carousel-btn.prev').addEventListener('click', () => {
+      index = (index - 1 + total) % total;
+      showSlide(index);
+    });
+
+    document.querySelector('.carousel-btn.next').addEventListener('click', () => {
+      index = (index + 1) % total;
+      showSlide(index);
+    });
+  </script>
+</body>
+</html>
+
